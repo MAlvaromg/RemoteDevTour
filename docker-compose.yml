@@ -1,0 +1,15 @@
+version : '2'
+
+services:
+  demowebapp:
+    image: devopslabacr.azurecr.io/demo-webapp:BuildNumber
+    ports:
+      - 80:80
+    depends_on:
+      - demowebapi
+    labels:
+      com.microsoft.acs.dcos.marathon.vhost : "rz-dcosagents.eastus.cloudapp.azure.com"
+  demowebapi:
+    image: devopslabacr.azurecr.io/demo-webapi:BuildNumber
+    ports:
+      - 9000:9000
