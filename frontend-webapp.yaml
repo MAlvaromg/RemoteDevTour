@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: demowebapp
-          image: "devopslabacr.azurecr.io/demo-webapp:BuildNumber"
+          image: "securedevopsacr.azurecr.io/demo-webapp:BuildNumber"
           ports:
             - name: http
               containerPort: 80

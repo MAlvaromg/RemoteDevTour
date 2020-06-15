@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: demowebapi
-          image: "devopslabacr.azurecr.io/demo-webapi:BuildNumber"
+          image: "securedevopsacr.azurecr.io/demo-webapi:BuildNumber"
           ports:
             - name: http
               containerPort: 9000
