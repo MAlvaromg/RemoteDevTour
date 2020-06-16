@@ -10,6 +10,7 @@ namespace mywebapp.Controllers
     public class HomeController : Controller
     {
         HttpClient client;
+        int brothers;
 
         public HomeController()
         {
@@ -21,17 +22,13 @@ namespace mywebapp.Controllers
             return View();
         }
 
-        public IActionResult About()
+
+        public IActionResult Lottery()
         {
-            ViewData["Message"] = "Your application description page.";
+            var price = 100000000;
+            var moneyPerPerson = price / brothers;
 
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
+            ViewData["Message"] = moneyPerPerson;
             return View();
         }
 
@@ -42,9 +39,7 @@ namespace mywebapp.Controllers
 
         public async Task<IActionResult> Quotes()
         {
-           
             var response = await client.GetStringAsync("http://demowebapi:9000/api/quotes");
-            //var sessions = JsonConvert.DeserializeObject&amp;lt;List&amp;lt;Session&amp;gt;&amp;gt;(response);
             ViewData["Message"] = response; //"Sessions";
             
             return View();
