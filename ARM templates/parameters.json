@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "registries_SecureDevOpsACR_name": {
+            "value": null
+        },
+        "managedClusters_Secure_devops_aks_name": {
+            "value": null
+        },
+        "containerGroups_securedevops_sonarqube_name": {
+            "value": null
+        },
+        "workspaces_defaultworkspace_16169bdf_109c_4eb7_9963_3d01e2352774_weu_externalid": {
+            "value": null
+        },
+        "publicIPAddresses_56161307_afd6_48b8_9dcd_11dd561b0776_externalid": {
+            "value": null
+        }
+    }
+}
