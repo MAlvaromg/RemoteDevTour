@@ -71,7 +71,7 @@
             "type": "Microsoft.ContainerRegistry/registries",
             "apiVersion": "2019-12-01-preview",
             "name": "[parameters('registries_SecureDevOpsACR_name')]",
-            "location": "northeurope",
+            "location": "westeurope",
             "sku": {
                 "name": "Standard",
                 "tier": "Standard"
