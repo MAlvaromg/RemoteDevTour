@@ -10,7 +10,7 @@ namespace mywebapp.Controllers
     public class HomeController : Controller
     {
         HttpClient client;
-        int brothers;
+        int brothers = 3;
 
         public HomeController()
         {
@@ -25,6 +25,7 @@ namespace mywebapp.Controllers
 
         public IActionResult Lottery()
         {
+            
             var price = 100000000;
             var moneyPerPerson = price / brothers;
 
